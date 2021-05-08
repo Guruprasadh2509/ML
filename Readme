@@ -1,0 +1,10 @@
+insurance.csv  is the dataset that was considered.
+Insurance_Expense_Prediction_Model_Building.ipynb - Model building and saved the built model and standardized values
+"model.pkl" and "x_std_scaler.bin" ,"y_std_scaler.bin" are consumed in flask for prediction and displaying the loaded data
+templates folder has the html templates which are rendered by flask
+postgres insert is triggered whenever the prediction call is made.
+
+
+http://127.0.0.1:5000/ -> Prediction endpoint
+http://127.0.0.1:5000/disp -->display based on conditions in the form
+http://127.0.0.1:5000/displayall --> all datapoints will be displayed without condition
